@@ -1,0 +1,27 @@
+### register api
+POST http://localhost:3001/register/
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+### login api
+POST http://localhost:3001/login/
+Content-Type: application/json
+
+{
+    "username": "JoeBiden",
+    "password": "biden@123"
+}
+
+### get latest 4 tweets api 3
+GET http://localhost:3001/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjgwODQ3MDcxfQ.lQ_7h7naUUdMOVo_A5FUicIkgqOAwroLRmUYXQCIlto
+
+### get names of follower api 4
+GET http://localhost:3001/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjgwODQ3MDcxfQ.lQ_7h7naUUdMOVo_A5FUicIkgqOAwroLRmUYXQCIlto
